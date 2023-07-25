@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        .data{ position: absolute;
+            left: 430px;
+            width: 320px;
+            height:221px;
+            background: turquoise;
+            display: none;
+        }
+        .jain{
+            width: 150px;
+            height: 600px;
+            background-color: crimson;
+           
+        }
+        .dada{ position: absolute;
+            
+            width: 320px;
+            height:221px;
+            background: turquoise;
+           display: none;
+        }
+        .main{ 
+          
+            width:400px;
+            height:fit-content;
+            border: 1px solid grey;
+            box-sizing: border-box;
+        }
+        .hen{
+           width: 450px;
+           height: 210px;
+           color: brown;
+           background-color: cadetblue;
+           float: right;
+         
+        }
+        .tain{
+           
+            
+            width:fit-content;
+            height:fit-content;
+            border: 1px solid grey;
+            box-sizing: border-box;
+        }
+        button{ border: none;
+        outline: none;
+        position:;
+          background-color: teal;
+          margin-top: -1px;
+          
+        }
+        .content{
+            display: flex;
+          width: 100vw;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            box-sizing: border-box;
+        }
+        a{ text-decoration: none;
+            color: dodgerblue;
+            display: flex;
+            width: 200px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        a img{
+            color: dodgerblue;
+        }
+        .jen{
+            clear: right;
+        }
+      .lan{
+          position: relative;
+          right: 320px;
+      }
+    </style>
+</head>
+<body>
+   
+      <div class="content">
+        <div class="main hen">
+            <button onclick="poo() ">click</button>
+            <div class="   data" id="data"   ></div>
+        </div> 
+        <hr>
+      
+          <div class="lan">
+            <button onmouseover="moo()"  onmouseout="too()" >click</button>
+            <div class="dada" id="dada"  onmouseover="moo()" onmouseout="too()" ></div>
+          </div>
+       
+      </div>
+      <p class="pen" id="pen">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio facere ad repudiandae!</p>
+      <hr>
+      <p onclick="hoo()" class="jen">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio facere ad repudiandae!</p>
+      <hr>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio facere ad repudiandae!</p>
+      <a href="#">shailvi <img src="projectmedia.html\img.html\arrow.png" width="6px"></a>
+    <script>
+        function poo(){ 
+            var x=  document.getElementById('data');
+       x.style.display="block";
+       x.classList.toggle("jain");
+        }
+        function koo(){
+         document.getElementById('data').style.display="none";
+        }
+        function moo(){
+            document.getElementById('dada').style.display="block";
+        }
+        function too(){
+            document.getElementById('dada').style.display="none";
+        }
+        function hoo(){
+            document.getElementById('pen').classList.add("hen");
+        }
+    </script>
+</body>
+</html>

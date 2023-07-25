@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .main{ display: flex;
+     align-items: center;
+     justify-content: space-between;
+       width: 570px;
+       height: 450px;
+       background: #d3cfcf;
+       border-radius: 12px;
+       display: none;
+       margin-bottom: 15px;
+     }
+     .data,.about{
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       width: 230px;
+       height: 180px;
+       background: rgb(255, 217, 0);
+     }
+     div>img{
+         width: 60px;
+      background: forestgreen;
+     }
+     div>p{
+       width: 90px;
+       height: 60px;
+       background: mediumblue;
+     }
+     .new{
+      display: flex;
+     align-items: center;
+     justify-content: space-between;
+       width: 570px;
+       height: 450px;
+       background: #d3cfcf;
+       border-radius: 12px;
+       margin-bottom: 12px;
+     }
+     p{
+       width: 250px;
+       height: 51px;
+       background: grey;
+     }
+    .para{
+      display: block;
+    }
+    </style>
+</head>
+<body>
+  <p class="para">CLICK "click" button to dynamically create a prototype div</p>
+   <img src="" id="img">
+       <form action="">
+        <input type="file" name="post" id="input" onchange="poo()" multiple required>
+        <input type="number" name="age" id="" min="5" max="21" step=".1" required>
+        <input type="submit" value="" onclick="poo()">
+       </form>
+       <input type="text" title="name">
+        
+      <div class="main" id="main">
+       <div class="data">
+         <img src="">
+         <p class="para"></p>
+       </div>
+       <div class="about">
+        <img src="">
+        <p class="para"></p>
+       </div>
+      </div>
+   <button onclick="boo()">click</button>
+    <hr>
+   
+  <form action="">
+      <input type="text" id="name" name="name" placeholder="type name.." value="ddddddd">
+      <input type="submit" value="submit"  onclick="data()" >
+      <select id="list" name="list"  onclick="hoo()" >
+        <option value="chose" selected>clothing</option>
+        <option value="shirt">t-shirt</option>
+        <option value="chaddi">pant</option>
+        <option value="ouser">trouser</option>
+      </select>
+    </form>
+    <p id="fag" ></p>
+    
+    <script>
+      function hoo(){
+        var x=document.getElementById('list').options[document.getElementById('list').selectedIndex].text;
+              
+        
+          document.getElementById('fag').innerText=x;
+
+      }
+
+
+
+      function data(){ var x= document.getElementById('fag');
+
+       x.innerHTML=document.getElementById('name').value;
+      }
+
+
+
+      function boo(){
+        var x=document.createElement("div");
+         x.innerHTML=document.getElementById('main').innerHTML;
+            x.classList.add("new");
+            document.body.appendChild(x);
+      }
+    </script>
+
+     <script>
+    const inputElement = document.getElementById("input");
+inputElement.addEventListener("change", handleFiles, false);
+function handleFiles() {
+  const fileList = this.files; /* now you can work with the file list */
+}
+ document.getElementById('img').src=filelist;
+    </script> 
+</body>
+</html>

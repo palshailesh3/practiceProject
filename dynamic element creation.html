@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .main{ position: relative;
+            width: 700px;
+            height: 450px;
+            border: 1px solid rgb(202, 199, 199);
+            display: flex;
+            flex-wrap: wrap;
+            overflow: auto;
+        }
+        .first{
+            width: 320px;
+            height: 221px;
+            background-color: dodgerblue;
+            display: block;
+        }
+        .thirst{ margin: 5px;
+            display: block;
+            width: 210px;
+            height: 150px;
+            background-color: rgb(182, 253, 182);
+           
+        }
+        button{position: sticky;
+           align-self: flex-start;
+            top: 3%;
+            left: 650px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main" id="main">
+        <button  onclick="set()">click</button>
+        <div class="first" id="first"></div>
+    </div>
+    <button onclick="koo()">click</button>
+    <div id="pan"></div>
+    <script>
+      function set(){
+          
+        const para = document.createElement("p");
+        para.classList.toggle("thirst");
+para.innerText = "This is a paragraph.";
+document.getElementById('main').appendChild(para);
+      }
+function koo(){
+    var y=document.getElementById("pan");
+ y.classList.toggle("thirst");
+}
+    </script>
+</body>
+</html>
